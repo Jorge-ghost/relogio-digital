@@ -1,0 +1,85 @@
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+* {
+margin: 0;
+padding: 0;
+font-family: 'open sans',sans-serif;
+}
+
+body {
+  height: 100vh;
+  animation-name: cor;
+  animation-duration: 4s; 
+  animation-iteration-count: infinite; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relogio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 530px;
+  background: transparent;
+  border-radius: 3px;
+  box-shadow: 0px 8px 10px rgba(azul, #00d9ff, lightSkyBlue);
+  padding-bottom: 100px;
+}
+
+.relogio div{
+  height: 100px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(5,5,5, 0.9);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, -7);
+  border-radius: 7px; 
+  letter-spacing: 3px; 
+  animation: fil 5s ease-in-out infinite;
+}
+
+#canvi {
+  display: block;
+  
+}
+
+.relogio spam{
+  font-weight: bolder;
+  font-size: 50px;
+  
+}
+
+.relogio spam.tempo {
+  font-size: 50px;
+}
+
+@keyframes cor {
+  from {background: lightSkyBlue;}
+  to {background: lime;}
+}
+
+@keyframes fil {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-26px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+  
+.relogio > div:hover{
+  background-color: darkgray;
+}
+
+.relogio > div:active{
+  background-color: snow;
+}
+
